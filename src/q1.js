@@ -13,6 +13,14 @@
 
 function swap(x, y){
     // Task 1: Add code here
+    if (typeof x == "number" && typeof y == "number"){
+      [x, y] = [y, x];
+    return console.log([x, y]);
+    }else{
+      return console.log(-1);
+    }
 }
 
 // Task 2: Add code here
+swap("Apple",10);
+swap(9,17);
